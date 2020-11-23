@@ -1,0 +1,33 @@
+conda install -c fastai nbdev
+conda install -c pytorch torchvision
+pip install git+https://github.com/tmabraham/UPIT.git
+
+conda install -c conda-forge jupyterthemes
+jt -t monokai -f fira -fs 13 -nf ptsans -nfs 11 -N -kl -cursw 5 -cursc g -cellw 95% -T
+conda install -c anaconda seaborn
+conda install -c conda-forge jupyter_contrib_nbextensions
+jupyter contrib nbextension install --user
+pip install autopep8
+
+
+git init
+git clone git@github.com:brainud/UPIT.git
+git remote add upstream https://github.com/UPSTREAM-USER/ORIGINAL-PROJECT.git
+git remote -v
+git fetch upstream
+git branch -va # Viewing
+git checkout master
+git merge upstream/master
+
+git add -all
+git commit -m "Initial Commit :rocket:"
+git push -u upstream master
+https://gist.github.com/Chaser324/ce0505fbed06b947d962	
+
+
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/seankross/womp.git
+git push -u origin master
